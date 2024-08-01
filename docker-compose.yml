@@ -1,10 +1,8 @@
-version: '3'
+version: '3.9'
 
 services:
 
-  flask_app:
-    name: chatgpt_flask
-    build:
-      context: .
+  web:
+    image: "kubernetgk/flask_app"
     ports:
       - "5000:5000"
